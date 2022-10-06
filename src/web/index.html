@@ -46,7 +46,7 @@
         const [info, setInfo] = useState("");
         const inputChange = (e) => setInfo(e.target.value);
 
-        const data = { info, source: new Date().toISOString() };
+        const data = { info, time: new Date().toISOString() };
         const commit = () => {
           fetch("/fact", {
             method: "post",
@@ -93,14 +93,14 @@
               <thead>
                 <tr>
                   <th>Fact</th>
-                  <th>Source</th>
+                  <th>Time</th>
                 </tr>
               </thead>
               <tbody>
                 {facts.map((fact, i) => (
                   <tr key={i}>
                     <td>{fact.info}</td>
-                    <td>{fact.source}</td>
+                    <td>{fact.time}</td>
                   </tr>
                 ))}
               </tbody>

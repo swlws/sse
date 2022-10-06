@@ -27,6 +27,18 @@ events.onmessage = (event) => {
 };
 ```
 
+## 启动服务
+
+启动服务
+
+> pnpm install
+> pnpm serve
+
+浏览器打开多个 Tab 页，访问地址：
+
+> http://127.0.0.1:3001/web/index.html
+
 ## 参看文献
 
 - [How To Use Server-Sent Events in Node.js to Build a Realtime App](https://www.digitalocean.com/community/tutorials/nodejs-server-sent-events-build-realtime-app)
+- [MDN DOC](https://developer.mozilla.org/zh-CN/docs/Web/API/Server-sent_events/Using_server-sent_events#%E4%BA%8B%E4%BB%B6%E6%B5%81%E6%A0%BC%E5%BC%8F)
